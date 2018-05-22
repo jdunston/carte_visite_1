@@ -16,7 +16,8 @@ public class repertoire extends AppCompatActivity {
     private ImageButton profil;
     private carte;
 
-    public list<carte> getallcarte();
+    public List<carte> getallcarte();
+
 
 
 
@@ -29,6 +30,11 @@ public class repertoire extends AppCompatActivity {
         rep = (ImageButton) findViewById(R.id.repertoir);
         ajout = (ImageButton) findViewById(R.id.plus);
         profil = (ImageButton) findViewById(R.id.pro);
+        String nom;
+        String prenom;
+        String mail;
+        String num;
+        String entreprise;
 
 
 

@@ -52,7 +52,7 @@ public class ajoutmanuel extends AppCompatActivity {
         ajout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addCarte( prenom,  nom ,  tel, entreprise, mail);
+                public addCarte( prenom,  nom ,  tel, entreprise, mail);
 
                 Intent ajout = new Intent(ajoutmanuel.this,ajout.class);
                 startActivity(ajout);
@@ -67,5 +67,6 @@ public class ajoutmanuel extends AppCompatActivity {
             }
         });
 
+        databaseHandler = new DatabaseHandler(this);
     }
 }

@@ -91,7 +91,7 @@ public class acceuil extends AppCompatActivity {
         inscription.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                public long addIdentification(mail_insc, mdp_insc);
+                    long addIdentification(mail_insc, mdp_insc) ;
                     Intent enter = new Intent(acceuil.this, profil.class);
                     enter.putExtra("pk", pk);
                     startActivity(enter);

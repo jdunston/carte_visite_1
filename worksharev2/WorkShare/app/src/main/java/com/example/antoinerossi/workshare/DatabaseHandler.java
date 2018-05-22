@@ -82,11 +82,10 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         return pk;
     }
-    public long addCarte(String prenom, String nom , String num, string entreprise, string mail ) {
+    public long addCarte(String prenom, String nom , String num, String entreprise, String mail ) {
         ContentValues values = new ContentValues();
         values.put(CARTE_NOM, nom);
         values.put(CARTE_PRENOM, prenom);
-        values.put(CARTE_NUM, name);
         values.put(CARTE_MAIL, mail);
         values.put(CARTE_ENTREPRISE, entreprise);
         values.put(CARTE_FOREIGNKEY, IDENTIFICATION_KEY);
@@ -130,7 +129,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         return result;
     }
-    public List<Carte> getAllcarte() {
+    public List<Carte>  getAllcarte() {
         List<carte> result = new ArrayList<>();
 
         Cursor c = readDatabase.query(CARTE_TABLE_NAME,
